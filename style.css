@@ -1,0 +1,676 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Karla:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Karla', sans-serif;
+}
+
+.conteiner {
+    position: relative;
+    min-width: 375px;
+    height: 100vh;
+}
+
+nav {
+    width: 100%;
+    height: 50px;
+    background-color: hsl(0, 0%, 98%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 13%;
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.hamburger {
+    display: none;
+}
+
+.line {
+    width: 20vh;
+    height: 1px;
+    background-color: hsl(273, 4%, 51%);
+    margin-bottom: 5%;
+}
+
+.logo {
+    cursor: pointer;
+    width: auto;
+    height: 23px;
+}
+
+#nav-ul {
+    list-style: none;
+    text-transform: uppercase;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav li {
+    padding-right: 40px;
+    letter-spacing: 4px;
+}
+
+
+nav a {
+    text-decoration: none;
+    color: hsl(273, 4%, 51%);
+    font-family: 'DM Serif Display', serif;
+}
+
+nav a:hover {
+    color: hsl(270, 9%, 17%);
+}
+
+
+
+nav li button {
+    background-color: white;
+    border: 2px solid hsl(270, 9%, 17%);
+    color: hsl(270, 9%, 17%);
+    font-family: 'DM Serif Display', serif;
+    letter-spacing: 2px;
+    padding: 10px 40px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+nav li button:hover {
+    background-color: hsl(270, 9%, 17%);
+    color: hsl(0, 0%, 98%);
+}
+
+.hero {
+    width: 100%;
+    height: 80vh;
+    background-color: hsl(256, 26%, 20%);
+    position: relative;
+}
+
+.col-1 {
+    width: 60%;
+    height: 60%;
+    padding: 10% 13%;
+}
+
+.col-1 h1 {
+    color: hsl(0, 0%, 98%);
+    font-size: 5.1em;
+    font-family: 'DM Serif Display', serif;
+    font-weight: 400;
+    line-height: 90%;
+    padding-bottom: 6%;
+    padding-top: 5%;
+}
+
+.col-1 p {
+    color: hsl(0, 0%, 98%);
+    font-size: 1.1em;
+    font-weight: 400;
+    line-height: 150%;
+    padding-bottom: 6%;
+}
+
+.col-1 button {
+    background-color: hsl(256, 26%, 20%);
+    border: 2px solid hsl(0, 0%, 98%);
+    color: hsl(0, 0%, 98%);
+    letter-spacing: 2px;
+    font-weight: 700;
+    padding: 10px 40px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.col-1 button:hover {
+    background-color: hsl(0, 0%, 98%);
+    color: hsl(256, 26%, 20%);
+}
+
+.hero-img {
+    position: absolute;
+    width: 35%;
+    max-height: 80%;
+    top: 20%;
+    right: 8%;
+    z-index: 1;
+}
+
+.hero-img-mobile {
+    display: none;
+}
+
+.heroPattern-right {
+    background-image: url('/images/bg-pattern-intro-right-desktop.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 30%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.heroPattern-left {
+    background-image: url('/images/bg-pattern-intro-left-desktop.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 40%;
+    height: 100%;
+    position: absolute;
+    top: 80%;
+    left: 0;
+    z-index: 1;
+}
+
+.main {
+    margin-top: 40vh;
+    padding: 0 13%;
+    width: 100%;
+}
+
+.main h1 {
+    font-size: 5.1em;
+    font-family: 'DM Serif Display', serif;
+    font-weight: 400;
+    color: hsl(270, 9%, 17%);
+}
+
+.icons {
+    display: flex;
+    padding-top: 8%;
+}
+
+.process,
+.price,
+.first {
+    padding-right: 8%;
+}
+
+.process h2,
+.price h2,
+.first h2 {
+    font-size: 1.5em;
+    font-weight: 700;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    color: hsl(270, 9%, 17%);
+}
+
+.process p,
+.price p,
+.first p {
+    line-height: 150%;
+    color: hsl(273, 4%, 51%);
+}
+
+.banner {
+    background-color: hsl(256, 26%, 20%);
+    width: 100%;
+    height: 26vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15%;
+    position: relative;
+    overflow: hidden;
+}
+
+.banner h1 {
+    font-size: 3.5em;
+    width: 55%;
+    color: hsl(0, 0%, 98%);
+    padding: 8% 8%;
+}
+
+.banner button {
+    background-color: hsl(256, 26%, 20%);
+    border: 2px solid hsl(0, 0%, 98%);
+    color: hsl(0, 0%, 98%);
+    letter-spacing: 2px;
+    padding: 10px 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-right: 8%;
+    z-index: 1;
+}
+
+.banner button:hover {
+    background-color: hsl(0, 0%, 98%);
+    color: hsl(256, 26%, 20%);
+}
+
+.banner-img {
+    position: absolute;
+    background-image: url("/images/bg-pattern-how-we-work-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 45%;
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.footer {
+    position: relative;
+    margin-top: 15%;
+    padding: 5% 13%;
+    width: 100%;
+    background-color: hsl(0, 0%, 98%);
+    z-index: 1;
+}
+
+.social {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 3%;
+    border-bottom: 1px solid hsla(273, 4%, 51%, 0.3);
+    z-index: 1;
+}
+
+.social-icons img {
+    padding-left: 15px;
+}
+
+.info {
+    padding-top: 3%;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+}
+
+.company a,
+.help a,
+.contact a,
+.others a {
+    display: block;
+    text-decoration: none;
+    color: hsl(270, 9%, 17%);
+    font-weight: 700;
+}
+
+.company a:hover,
+.help a:hover,
+.contact a:hover,
+.others a:hover {
+    text-decoration: underline;
+}
+
+.first-a {
+    color: hsl(273, 4%, 51%) !important;
+}
+
+.company li,
+.help li,
+.contact li,
+.others li {
+    list-style: none;
+    line-height: 200%;
+}
+
+.company li:nth-child(1),
+.help li:nth-child(1),
+.contact li:nth-child(1),
+.others li:nth-child(1) {
+    padding-bottom: 25px;
+}
+
+.footer-img {
+    background-image: url("/images/bg-pattern-footer-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100%;
+    width: 35%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(270, 9%, 17%);
+}
+
+
+@media screen and (max-width:1150px) {
+    .conteiner.disable {
+        display: block;
+    }
+
+    nav {
+        padding: 0 8%;
+        height: 12vh;
+        z-index: 4;
+        flex-wrap: wrap;
+    }
+
+    nav a {
+        color: hsl(0, 0%, 98%);
+    }
+
+    nav li {
+        padding-right: 0;
+    }
+
+    nav li button {
+        background-color: hsl(270, 9%, 17%);
+        border: 2px solid hsl(0, 0%, 98%);
+        color: hsl(0, 0%, 98%);
+    }
+
+    .nav-mobile-img {
+        background-image: url('/images/bg-pattern-mobile-nav.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        top: 8%;
+        right: 0;
+        width: 100%;
+        height: 35vh;
+    }
+
+    #nav-ul {
+        display: none;
+        flex-direction: column;
+    }
+
+    #nav-ul.show {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        display: flex;
+        justify-content: space-evenly;
+        background-color: hsl(270, 9%, 17%);
+        width: 100%;
+        height: 80vh;
+        overflow: hidden;
+    }
+
+    .hamburger {
+        display: block;
+        background-image: url('/images/icon-hamburger.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 4vh;
+        height: 4vh;
+        transition: 0.5s;
+    }
+
+    .hamburger.exit {
+        background-image: url('/images/icon-close.svg');
+    }
+
+    .stop-scrolling {
+        height: 100%;
+        overflow: hidden;
+    }
+
+    .hero-img {
+        right: 4%;
+    }
+
+    .banner h1 {
+        font-size: 3.5em;
+        width: 65%;
+        color: hsl(0, 0%, 98%);
+        padding: 8% 8%;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .hero-img {
+        display: none;
+    }
+
+    .hero-img-mobile {
+        display: block;
+        width: 100%;
+    }
+
+    .hero {
+        height: 80vh;
+    }
+
+    .heroPattern-right {
+        background-image: url('/images/bg-pattern-intro-right-mobile.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 30%;
+        min-height: 100%;
+        position: absolute;
+        top: 65%;
+        right: 0%;
+    }
+
+    .heroPattern-left {
+        background-image: url('/images/bg-pattern-intro-left-mobile.svg');
+        width: 40%;
+        top: 0;
+    }
+
+    .col-1 {
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+
+    .col-1 h1 {
+        position: relative;
+        text-align: center;
+        padding-bottom: 15%;
+        z-index: 2;
+    }
+
+    .col-1 p {
+        text-align: center;
+        font-weight: 700;
+    }
+
+    .col-1 button {
+        margin: 0;
+        position: absolute;
+        bottom: 10%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .line {
+        margin: 0;
+        position: relative;
+        top: 0%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .main {
+        margin-top: 30vh;
+    }
+
+    .main h1 {
+        text-align: center;
+        padding-top: 8%;
+    }
+
+    .icons {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .process,
+    .price,
+    .first {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-right: 0;
+        padding-top: 8%;
+    }
+
+    .process h2,
+    .price h2,
+    .first h2 {
+        text-align: center;
+    }
+
+    .process p,
+    .price p,
+    .first p {
+        text-align: center;
+        padding-bottom: 6%;
+        font-weight: 700;
+    }
+
+    .process-img,
+    .price-img,
+    .first-img {
+        min-width: 15%;
+    }
+
+    .banner {
+        flex-direction: column;
+        justify-content: space-around;
+        height: 50vh;
+    }
+
+    .banner h1 {
+        position: relative;
+        text-align: center;
+        font-size: 2.5em;
+        height: 50%;
+        padding-top: 8%;
+        top: 15%;
+        padding: 0 0;
+        z-index: 1;
+    }
+
+    .banner button {
+        position: relative;
+        top: -12%;
+        margin-right: 0;
+        z-index: 1;
+    }
+
+    .banner-img {
+        background-image: url('/images/bg-pattern-how-we-work-mobile.svg');
+        width: 35%;
+        height: 100%;
+    }
+
+    .info {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+
+    }
+
+    .company a,
+    .help a,
+    .contact a,
+    .others a {
+        text-align: center;
+        font-weight: 700;
+    }
+
+    .first-a {
+        padding-top: 25px;
+    }
+
+    .footer-img {
+        background-image: url('/images/bg-pattern-footer-mobile.svg');
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:480px) {
+
+    .hero-img {
+        display: none;
+    }
+
+    .hero-img-mobile {
+        display: block;
+        width: 100%;
+    }
+
+    .col-1 {
+        padding: 10% 4%;
+    }
+
+    .col-1 h1 {
+        font-size: 3em;
+        line-height: 100%;
+        padding-bottom: 10%;
+        padding-top: 15%;
+    }
+
+    .col-1 p {
+        font-weight: 400;
+    }
+
+    .col-1 button {
+        top: 80%;
+    }
+
+    .line {
+        margin-top: 5%;
+    }
+
+    .heroPattern-right {
+        width: 40%;
+        top: 75%;
+
+    }
+
+    .main {
+        padding: 0 4%;
+    }
+
+    .main h1 {
+        font-size: 3em;
+    }
+
+    .banner {
+        padding: 0;
+    }
+
+    .banner h1 {
+        padding-top: 0;
+        font-size: 2em;
+    }
+
+    .banner-img {
+
+        width: 65%;
+        height: 100%;
+    }
+
+    .social {
+        position: relative;
+        height: 12vh;
+        flex-direction: column;
+        padding-bottom: 5%;
+    }
+
+    .social-icons img {
+        padding-left: 0;
+    }
+}
